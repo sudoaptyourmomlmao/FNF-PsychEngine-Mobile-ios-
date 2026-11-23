@@ -27,7 +27,7 @@ jobs:
   build:
     name: ${{ matrix.name }}
     needs: get-commit-hash
-           strategy:
+    strategy:
       fail-fast: false
       matrix:
         include:
