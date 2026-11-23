@@ -27,9 +27,9 @@ jobs:
   build:
     name: ${{ matrix.name }}
     needs: get-commit-hash
-    strategy:
-  fail-fast: false
-  matrix:
+        strategy:
+      fail-fast: false
+      matrix:
         include:
           - name: Android
             os: macos-15
