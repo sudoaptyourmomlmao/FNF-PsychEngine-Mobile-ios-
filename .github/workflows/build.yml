@@ -54,6 +54,12 @@ jobs:
       - name: Install Libraries
         run: ${{ inputs.setupCommand }}
 
+      - name: Check Haxelib
+        run: |
+          haxelib config
+          haxelib list
+          git --version
+
       - name: Install Lime
         run: haxelib install lime
 
