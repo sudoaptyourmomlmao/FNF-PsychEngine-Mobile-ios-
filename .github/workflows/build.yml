@@ -54,6 +54,9 @@ jobs:
       - name: Install Libraries
         run: ${{ inputs.setupCommand }}
 
+      - name: Install Lime
+        run: haxelib install lime
+
       - name: Configure Android
         if: inputs.name == 'Android'
         run: |
