@@ -59,6 +59,11 @@ jobs:
           haxelib config
           haxelib list
           git --version
+      - name: Verify Android Tools
+        if: inputs.name == 'Android'
+        run: |
+          haxelib list
+          haxelib path extension-androidtools
 
       - name: Install Lime
         run: haxelib install lime
