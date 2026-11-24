@@ -14,7 +14,7 @@ echo "Installing dependencies..."
 haxelib git hxcpp https://github.com/Psych-Plus-Team/hxcpp --quiet
 haxelib git lime https://github.com/Psych-Plus-Team/lime --quiet
 haxelib install openfl 9.3.3 --quiet
-haxelib git flixel https://github.com/Psych-Plus-Team/flixel 5.6.1 --quiet
+haxelib git flixel https://github.com/Psych-Plus-Team/flixel --quiet
 haxelib install flixel-addons 3.2.2 --quiet
 haxelib install flixel-tools 1.5.1 --quiet
 haxelib install hscript-iris 1.1.3 --quiet
